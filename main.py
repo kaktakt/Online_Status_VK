@@ -7,8 +7,6 @@ load_dotenv()
 
 # Чтение токена из файла .env
 token = os.getenv("TOKEN")
-version = os.getenv("VERSION")
-author = os.getenv("AUTHOR")
 
 # Открытие файла log_err.txt в режиме записи
 log_file = open("log_err.txt", "w", encoding="utf-8")
@@ -24,11 +22,6 @@ try:
     def clear_console():
         os.system('cls' if os.name == 'nt' else 'clear')
 
-    print("\n -----------------------------\n")
-
-    print(" Version -", version)
-    print(" Author  -", author)
-    
     print("\n -----------------------------\n")
     time.sleep(0.45)
 
